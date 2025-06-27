@@ -11,7 +11,6 @@
 .square {
   border: solid 5px #ffffff63;
   background-color: #ffffffbf;
-  font-family: "Arvo", cursive;
   border-radius: 10px;
 }
 
@@ -103,14 +102,12 @@ body {
 .score {
   font-size: 2rem;
   color: #DBEDF3;
-  font-family: "Arvo", cursive;
   text-shadow: 3px 0 #250413;
 }
 
 h1 {
   font-size: 5rem;
   color: #DBEDF3;
-  font-family: "Arvo", cursive;
   text-shadow: 3px 0 #DA0463;
 
 }
