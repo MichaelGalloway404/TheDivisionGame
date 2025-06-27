@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>DIVIDE</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="center">
+    <p class="score ">Final Penalty Score: </p>
+  </div>
+  <button class="rulesButton">rules</button>
+  <button class="DirButton submit">submit</button>
+  <button class="DirButton undo">undo</button>
+  <p class="rules hidden">
+    This is a grid based game that uses division, the player controls the number in the green square. When the player
+    moves to a new spot the number in that spot is divided by the player’s number. <br><br>
+
+    The way division works in this game is modified. When a smaller number is divided by a larger number for example 18
+    / 70 = 0.25, then the decimal is shifted to the right resulting in 2.5 replacing 18 with 2 and 70 with 5. The
+    player’s spot will be 5 and the player’s previous spot will be 2. <br><br>
+
+    However, when a larger number is divided by a smaller number the result will be the ones decimal place and the
+    tenths decimal place, for example 98 / 42 = 2.3333, then 98 = 2 and 42 = 3. The player’s spot will be 2 and the
+    player’s previous spot will be 3, there is no rounding.<br><br>
+
+    You are trying to zero out the board, with your last remaining number as small as possible before hitting submit.
+    This will give you your lowest possible penalty which is your greatest score. <br> <br>
+
+    You are allowed to undo one move, you can also undo adding or subtracting from a number but only if you haven’t
+    moved yet. <br><br>
+
+    The player can move in any direction, up, down, left, and right. The player can also add or subtract from the number
+    in the green square by pressing the plus or minus buttons. <br><br>
+
+  </p>
+  <div class="center">
+    <div class="panel">
+      <button class="square 0">0</button>
+      <button class="square 1">1</button>
+      <button class="square 2">2</button>
+      <button class="square 3">3</button>
+      <button class="square 4">4</button>
+      <button class="square 5">5</button>
+      <button class="square 6">6</button>
+      <button class="square 7">0</button>
+      <button class="square 8">1</button>
+      <button class="square 9">2</button>
+      <button class="square 10">3</button>
+      <button class="square 11">4</button>
+      <button class="square 12">5</button>
+      <button class="square 13">6</button>
+      <button class="square 14">0</button>
+      <button class="square 15">1</button>
+      <button class="square 16">2</button>
+      <button class="square 17">3</button>
+      <button class="square 18">4</button>
+      <button class="square 19">5</button>
+      <button class="square 20">6</button>
+      <button class="square 21">0</button>
+      <button class="square 22">1</button>
+      <button class="square 23">2</button>
+      <button class="square 24">3</button>
+    </div>
+  </div>
+  <div class="center">
+    <button class="DirButton -"><img src="./images/minus.png" alt="minus button"></button>
+    <button class="DirButton up"><img src="./images/arrow_up.png" alt="up arrow"></button>
+    <button class="DirButton +"><img src="./images/plus.png" alt="plus button"></button>
+  </div>
+  <div class="center">
+    <button class="DirButton left"><img src="./images/arrow_left.png" alt="left arrow"></button>
+    <button class="DirButton down"><img src="./images/arrow_down.png" alt="down arrow"></button>
+    <button class="DirButton right"><img src="./images/arrow_right.png" alt="right arrow"></button>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
