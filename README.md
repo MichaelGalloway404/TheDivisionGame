@@ -1,15 +1,38 @@
-# The Division Game  
-  
-This is a grid based game that uses division, the player controls the number in the green square. When the player moves to a new spot the number in that spot is divided by the player’s number.  
-  
-The way division works in this game is modified. When a smaller number is divided by a larger number for example 18 / 70 = 0.25, then the decimal is shifted to the right resulting in 2.5 replacing 18 with 2 and 70 with 5. The player’s spot will be 5 and the player’s previous spot will be 2.  
-  
-However, when a larger number is divided by a smaller number the result will be the ones decimal place and the tenths decimal place, for example 98 / 42 = 2.3333, then 98 = 2 and 42 = 3. The player’s spot will be 2 and the player’s previous spot will be 3, there is no rounding.  
-  
-You are trying to zero out the board, with your last remaining number as small as possible before hitting submit. This will give you your lowest possible penalty which is your greatest score.  
-  
-You are allowed to undo one move, you can also undo adding or subtracting from a number but only if you haven’t moved yet.  
-  
-The player can move in any direction, up, down, left, and right. The player can also add or subtract from the number in the green square by pressing the plus or minus buttons.  
-  
-Try it out: https://michaelgalloway404.github.io/TheDivisionGame/
+# The Division Game
+
+**The Division Game** is a browser-based puzzle game built with **JavaScript, HTML, and CSS** that demonstrates grid-based game logic, custom mathematical rules, and interactive UI state management.
+
+Play the game:  
+https://michaelgalloway404.github.io/TheDivisionGame/
+
+## Overview
+
+The game takes place on a **5×5 grid of numbers** where the player controls a movable tile. When the player moves to an adjacent tile, the value in that tile is divided by the player's value using a **custom division rule** designed to keep all values within a playable integer range.
+
+The goal is to **reduce the board to as many zero values as possible while minimizing the final remaining numbers**. When the player submits the board, the remaining values are summed to produce a **final penalty score**.
+
+## Key Features
+
+- **Custom mathematical rule system** that transforms division results into playable integers.
+- **Grid-based movement system** (up, down, left, right).
+- **Randomized board generation** for unique puzzles each playthrough.
+- **Undo system** using saved board states.
+- **Interactive UI** with dynamic DOM updates and visual highlighting of the player position.
+
+## Technical Highlights
+
+- Board state managed as a **2D array**
+- **Move history stack** for undo functionality
+- **Random puzzle generation**
+- **Event-driven UI** using JavaScript DOM event listeners
+- Dynamic rendering of the board and player state
+
+## Technologies Used
+
+- JavaScript
+- HTML
+- CSS
+
+## Author
+
+Michael Galloway  
